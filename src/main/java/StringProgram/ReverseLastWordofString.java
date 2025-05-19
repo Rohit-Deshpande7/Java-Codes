@@ -22,6 +22,11 @@ public class ReverseLastWordofString {
 
     public static void main(String[] args) {
         String str ="This is java";
-        reverseLastWord(str);
+        try{
+            reverseLastWord(str);
+        }catch (StringIndexOutOfBoundsException s)
+        {
+            
+        }
     }
 }
