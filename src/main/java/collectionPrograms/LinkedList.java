@@ -1,12 +1,11 @@
 package collectionPrograms;
 
 import java.util.Iterator;
-import java.util.LinkedList;
 
-public class LinkedListBasics {
+public class LinkedList {
     public static void main(String[] args) {
 
-        LinkedList<String> names = new LinkedList<String>();
+        java.util.LinkedList<String> names = new java.util.LinkedList<String>();
 
         names.add("Java");
         names.add("C");
