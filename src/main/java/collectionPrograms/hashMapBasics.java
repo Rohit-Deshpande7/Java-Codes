@@ -1,4 +1,4 @@
-package HashMapPrograms;
+package collectionPrograms;
 
 import java.util.HashMap;
 import java.util.Hashtable;
