@@ -2,31 +2,34 @@ package StringProgram;
 
 public class ReverseLastWordofString {
 
-    public static void reverseLastWord(String inputString)
+    public static void reverseLastWord(String str)
     {
-        String [] strArray= inputString.split(" ");
-        String reverse="", revstr="";
-        char ch;
-        for (int i=0;i<strArray.length;i++)
-        {
-            String word=strArray[i];
-            for(int j=(strArray.length-1);j<=word.length();j++)
-            {
-                ch=word.charAt(j);
-                reverse=ch+reverse;
-            }
-            revstr=revstr+reverse+" ";
+        String[] words = str.split(" ");
+
+        // Reverse the last word manually without using StringBuilder
+        String lastWord = words[words.length - 1];
+        String reversedLastWord = "";
+
+        for (int i = lastWord.length() - 1; i >= 0; i--) {
+            reversedLastWord = reversedLastWord+ lastWord.charAt(i);
         }
-        System.out.println(revstr);
+
+        // Replace the last word with the reversed one
+        words[words.length - 1] = reversedLastWord;
+
+        // Reconstruct the sentence manually
+        String output = "";
+        for (int i = 0; i < words.length; i++) {
+            output = output+words[i];
+            if (i < words.length - 1) {
+                output += " ";
+            }
+        }
+        System.out.println(output);
     }
 
     public static void main(String[] args) {
-        String str ="This is java";
-        try{
-            reverseLastWord(str);
-        }catch (StringIndexOutOfBoundsException s)
-        {
-            
-        }
+        String str ="This is java online compiler";
+           reverseLastWord(str);
     }
 }

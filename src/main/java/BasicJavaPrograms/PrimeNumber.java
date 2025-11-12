@@ -12,13 +12,15 @@ public class PrimeNumber {
         if (count == 2) {
             System.out.println("The given number " + n + " is prime number");
             }
-        else
-            System.out.println("The given number " + n + " is not prime number");
+       // else
+         //  System.out.println("The given number " + n + " is not prime number");
     }
     public static void main(String[]args)
     {
         Scanner scanner= new Scanner(System.in);
-        int n= scanner.nextInt();
-        primeNum(n);
+      //  int n= scanner.nextInt();
+        int num;
+        for (int i=1;i<=100;i++)
+          primeNum(i);
     }
 }
