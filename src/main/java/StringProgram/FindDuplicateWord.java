@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class RemoveDuplicateWord {
+public class FindDuplicateWord {
     public static void main(String []args)
     {
         String str = ("four,five,six,four,seven,five,six,four");
