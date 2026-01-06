@@ -2,7 +2,7 @@ package StringProgram;
 
 import java.util.HashSet;
 
-public class RemoveDuplicateCharactersInString {
+public class RemoveDuplicateCharactersInStringUsingHashSet {
     public static void RemoveDuplicateCharacters(String str)
     {
         HashSet<Character> originalString=  new HashSet<Character>();
